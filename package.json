@@ -1,8 +1,8 @@
 {
-  "name": "uoc-boilerplate",
-  "version": "3.6.0",
+  "name": "chess-club-2",
+  "version": "1.0.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Chess Club static page based on Boilerplate for Advanced HTML/CSS Tools UOC students, with Tailwind and PostCSS",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
@@ -23,25 +23,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/edealfonso/uoc-boilerplate-chess-2.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Elsa de Alfonso",
+    "email": "elsa.de.alfonso@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "https://github.com/edealfonso/uoc-boilerplate-chess-2/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/edealfonso/uoc-boilerplate-chess-2#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.8.3",
+    "postcss": "^8.4.23",
     "postcss-preset-env": "^7.8.3",
     "posthtml-include": "^1.7.4",
     "rimraf": "^3.0.2",
-    "sharp": "0.31.1"
+    "sharp": "0.31.1",
+    "tailwindcss": "^3.3.2"
   }
 }
