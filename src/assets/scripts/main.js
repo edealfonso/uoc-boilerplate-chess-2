@@ -10,7 +10,14 @@
  * Write any other JavaScript below
  */
 
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();
+import AOS from 'aos';
+
++(function () {
+
+    // AOS initialization + customization
+    AOS.init({
+        once: true,
+        duration: 1500,
+    });
+
+})();

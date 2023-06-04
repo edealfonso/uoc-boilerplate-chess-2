@@ -1,50 +1,37 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    
-    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
-      <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="https://tailwindcss.com/_next/static/media/sarah-dayan.de9b3815.jpg" alt="" width="384" height="512">
-      <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-        <blockquote>
-          <p class="text-lg font-medium">
-            “Tailwind CSS is the only framework that I've seen scale
-            on large teams. It’s easy to customize, adapts to any design,
-            and the build size is tiny.”
-          </p>
-        </blockquote>
-        <figcaption class="font-medium">
-          <div class="text-sky-500 dark:text-sky-400">
-            Sarah Dayan
-          </div>
-          <div class="text-slate-700 dark:text-slate-500">
-            Staff Engineer, Algolia
-          </div>
-        </figcaption>
-      </div>
-    </figure>
 
-    <div class="uoc-container">
-      
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Chess Club · Home</title>
+</head>
+
+<body class="cover" data-aos="fade-in">
+  <include src="./components/header.html" locals='{
+    "classes": "bg-light"
+  }'></include>
+
+  <img class="cover__image" 
+    alt="Vijay Verma, CC0, via Wikimedia Commons"
+    src="https://upload.wikimedia.org/wikipedia/commons/1/11/Chess-dynamic-gradient.png" 
+    data-aos="fade-in"
+    data-aos-delay="2000">
+
+  <img class="cover__image cover__image-hover" 
+    alt="The Chess Exchange Logo" 
+    src="./assets/images/logo-colored.svg">
+
+  <div class="cover__text display-4" 
+    data-aos="fade-in" 
+    data-aos-delay="3000">
+    Connect with a high-level playground
+  </div>
+
+  <include src="./components/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>
