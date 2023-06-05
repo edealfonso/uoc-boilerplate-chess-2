@@ -3,7 +3,7 @@
 
   "plugins": {
     "posthtml-include": {
-      "root": "./src"
+      "root": "./src/modules"
     }
   }
 }
