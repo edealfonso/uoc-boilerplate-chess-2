@@ -2,9 +2,6 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // corePlugins: {
-  //   container: false
-  // },
   content: ['./src/**/*.{html,js}'],
   theme: {
     colors : {
