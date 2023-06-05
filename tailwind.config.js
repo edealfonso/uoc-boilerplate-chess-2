@@ -13,7 +13,10 @@ module.exports = {
         light: 'rgb(219, 213, 241)',
       },
       'secondary': "#e78b80",
-      'black': "rgb(33, 37, 41)",
+      'black': {
+        DEFAULT: 'rgb(33, 37, 41)',
+        light: 'rgba(33, 37, 41, .03)',
+      },
       'white': "#fff",
     },
     fontFamily: {
@@ -33,7 +36,8 @@ module.exports = {
     },
     extend: {
       spacing: {
-        xxs: '5px',
+        xxxs: '5px',
+        xxs: '12px',
         xs: '1.125rem',
         sm: '1.35rem',
         md: '1.5rem',
@@ -42,9 +46,11 @@ module.exports = {
       },
       fontSize: {
         sm: ['15.2px', '20px'],
+        xl: ['1.25rem', '1.5rem'],
         cover: ['calc(1.475rem + 2.7vw)', '1.2'],
       },
       opacity: {
+        '18': '.18',
         '55': '.55',
       },
       gridTemplateRows: {
@@ -61,6 +67,12 @@ module.exports = {
       },
       maxWidth: {
         'cover': '7em',
+      },
+      flex: {
+        'card': '1 0 17em'
+      },
+      height: {
+        '68': '17rem',
       }
     },
   },

@@ -1,8 +1,0 @@
-@layer base {
-  body {
-    @apply font-body grid grid-rows-body min-h-screen m-0 overscroll-none;
-  }
-  section {
-    @apply overflow-hidden;
-  }
-}
