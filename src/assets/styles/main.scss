@@ -5,31 +5,22 @@
 @import 'fonts';
 
 //--------------------------
-// Tailwind init
-//--------------------------
-
-// @tailwind base;
-// @tailwind components;
-
-//--------------------------
 // Import npm dependencies
 // see: https://v2.parceljs.org/features/module-resolution/
 //--------------------------
 
-// @import '~/node_modules/aos/dist/aos.css';
+@import '~/node_modules/aos/dist/aos.css';
 @import '~/node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
 
-//--------------------------
-// Tailwind utilities
-//--------------------------
+//---------
+// Tailwind
+//---------
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-//--------------------------
 // Customization
-//--------------------------
 
 @layer base {
   body {
