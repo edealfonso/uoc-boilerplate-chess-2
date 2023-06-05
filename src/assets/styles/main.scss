@@ -8,21 +8,22 @@
 // Tailwind init
 //--------------------------
 
-@tailwind base;
-@tailwind components;
+// @tailwind base;
+// @tailwind components;
 
 //--------------------------
 // Import npm dependencies
 // see: https://v2.parceljs.org/features/module-resolution/
 //--------------------------
 
-@import '~/node_modules/aos/dist/aos.css';
+// @import '~/node_modules/aos/dist/aos.css';
 @import '~/node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
 
 //--------------------------
 // Tailwind utilities
 //--------------------------
-
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 
@@ -43,11 +44,12 @@
   .logo {
     @apply font-display flex gap-xs items-center py-xxxs w-max;
   }
+
   .card {
     @apply relative bg-white flex-card flex flex-col rounded-md border border-black/18;
 
     &__image {
-      @apply w-full h-68 object-cover rounded-t-md grayscale;
+      @apply w-full h-68 object-cover rounded-t-[0.32rem] grayscale;
     }
     &__content {
       @apply p-md flex-auto;
@@ -59,7 +61,11 @@
       @apply px-md py-xxs bg-black-light border-t border-black/18;
     }
     &__overlay {
-      @apply w-full h-full opacity-20 bg-secondary absolute inset-x-0 mix-blend-color;
+      @apply w-full h-full opacity-20 bg-secondary absolute rounded-md inset-x-0 mix-blend-color;
     }
+  }
+
+  .nav-link {
+    @apply opacity-55 hover:opacity-70 focus:opacity-70;
   }
 }

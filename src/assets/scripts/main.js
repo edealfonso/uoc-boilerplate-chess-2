@@ -15,9 +15,9 @@ import AOS from 'aos';
 +(function () {
 
     // AOS initialization + customization
-    AOS.init({
-        once: true,
-        duration: 1500,
-    });
+    // AOS.init({
+    //     once: true,
+    //     duration: 1500,
+    // });
 
 })();
